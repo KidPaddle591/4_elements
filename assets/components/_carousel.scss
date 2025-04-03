@@ -1,0 +1,83 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/typography" as *;
+@use"../abstracts/colors.scss" as *;
+
+.d-block{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
+.hotelFeu{
+    .carouselR{
+        display: flex;
+        .carousel-images{
+            margin-right: 2rem;
+            position : relative;
+            width: 488px;
+            height: 621px;
+            overflow: hidden;
+            .img-item{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: auto;
+            }
+        }
+        .carousel-right {
+            position : relative;
+            width: 244px;
+            height: 621px;
+            overflow: hidden;
+            .img-item{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
+.hotelAir{
+    .carouselL{
+        display: flex;
+        .carousel-button {
+            position : relative;
+            width: 244px;
+            height: 621px;
+            overflow: hidden;
+            .img-item{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: auto;
+            }
+        }
+        .carousel-images{
+            margin-left: 2rem;
+            position : relative;
+            width: 488px;
+            height: 621px;
+            overflow: hidden;
+            .img-item{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                height: auto;
+            }
+        }
+        
+    }
+}

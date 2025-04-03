@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/typography" as *;
+@use"../abstracts/colors.scss" as *;
+
+header{
+    font-family: $font-family-secondary;
+    font-size: 1.25rem;
+    ;
+    .container-fluid{
+        width: 100%;
+        background-color: #E5E0DC;
+        opacity: 0.89;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .column{ //div avec le logo
+                img{
+                    width: 159px;
+                    vertical-align: center;
+                    padding: 0.5rem;
+                    margin-left: 4rem;
+                }
+            }
+            .column{ // div avec feu air terre eau
+                ul{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        padding:0rem 1rem 0rem 1rem;
+                        a{
+                            @include mixin-remove-link-style-header;
+                        }
+                    }
+                }
+            }
+            .column:nth-child(3) { //div contact insta et fb
+                display: flex;
+                margin-left: 15rem;
+                gap: 1rem;
+                align-items: center;
+                a{
+                    @include mixin-remove-link-style-header;
+                   img{
+                        width: 40px ;
+                   }
+                }
+            }
+            .column:nth-child(4){
+                display: flex;
+                margin-left: 5rem;
+                margin-right: 4rem; ;
+                gap: 1rem;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }    
+    }
+}

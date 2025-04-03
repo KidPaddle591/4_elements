@@ -1,0 +1,30 @@
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+@use "../../abstracts/mixins" as *;
+
+.header-footer-btn-primary{
+    background-color: #363A2B;
+    border-radius: 6px;
+    height: 50%;
+    a{
+        padding: 1rem;
+        color: $primary-color-txt;
+    }
+}
+
+.header-footer-btn-secondary{
+    a{
+        color:$secondary-color-link;
+    }
+}
+
+.btn-primary{
+    background-color: #363A2B;
+    border-radius: 6px;
+    //height: 50%;
+    width: 60%;
+    padding: 1rem;
+    font-family: $font-family-secondary;
+    font-size:1.875rem;
+    @include mixin-remove-link-style;
+}

@@ -1,3 +1,379 @@
+@font-face {
+  font-family: "PFDM";
+  src: url("/font/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDB";
+  src: url("/font/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KarlaR";
+  src: url("/font/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KarlaB";
+  src: url("/font/Karla-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+header {
+  font-family: "KarlaR";
+  font-size: 1.25rem;
+}
+header .container-fluid {
+  width: 100%;
+  background-color: #E5E0DC;
+  opacity: 0.89;
+}
+header .container-fluid .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container-fluid .row .column img {
+  width: 159px;
+  vertical-align: center;
+  padding: 0.5rem;
+  margin-left: 4rem;
+}
+header .container-fluid .row .column ul {
+  display: flex;
+  list-style: none;
+}
+header .container-fluid .row .column ul li {
+  padding: 0rem 1rem 0rem 1rem;
+}
+header .container-fluid .row .column ul li a {
+  text-decoration: none;
+  color: #363A2B;
+}
+header .container-fluid .row .column:nth-child(3) {
+  display: flex;
+  margin-left: 15rem;
+  gap: 1rem;
+  align-items: center;
+}
+header .container-fluid .row .column:nth-child(3) a {
+  text-decoration: none;
+  color: #363A2B;
+}
+header .container-fluid .row .column:nth-child(3) a img {
+  width: 40px;
+}
+header .container-fluid .row .column:nth-child(4) {
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 4rem;
+  gap: 1rem;
+}
+header .container-fluid .row .column:nth-child(4) a {
+  text-decoration: none;
+}
+
+.header-footer-btn-primary {
+  background-color: #363A2B;
+  border-radius: 6px;
+  height: 50%;
+}
+.header-footer-btn-primary a {
+  padding: 1rem;
+  color: white;
+}
+
+.header-footer-btn-secondary a {
+  color: #363A2B;
+}
+
+.btn-primary {
+  background-color: #363A2B;
+  border-radius: 6px;
+  width: 60%;
+  padding: 1rem;
+  font-family: "KarlaR";
+  font-size: 1.875rem;
+}
+.btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.d-block {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.hotelFeu .carouselR {
+  display: flex;
+}
+.hotelFeu .carouselR .carousel-images {
+  margin-right: 2rem;
+  position: relative;
+  width: 488px;
+  height: 621px;
+  overflow: hidden;
+}
+.hotelFeu .carouselR .carousel-images .img-item {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+}
+.hotelFeu .carouselR .carousel-right {
+  position: relative;
+  width: 244px;
+  height: 621px;
+  overflow: hidden;
+}
+.hotelFeu .carouselR .carousel-right .img-item {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+}
+
+.hotelAir .carouselL {
+  display: flex;
+}
+.hotelAir .carouselL .carousel-button {
+  position: relative;
+  width: 244px;
+  height: 621px;
+  overflow: hidden;
+}
+.hotelAir .carouselL .carousel-button .img-item {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+}
+.hotelAir .carouselL .carousel-images {
+  margin-left: 2rem;
+  position: relative;
+  width: 488px;
+  height: 621px;
+  overflow: hidden;
+}
+.hotelAir .carouselL .carousel-images .img-item {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+}
+
+h4 {
+  font-family: "PFDB";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "PFDM";
+  font-size: 6rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+.banner .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.banner .row {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  z-index: 3;
+}
+.banner .row h1 {
+  font-family: PFDM;
+  font-size: 6.25rem;
+  color: #D9C7B3;
+  text-align: end;
+  margin-right: 3rem;
+}
+
+input,
+textarea,
+select {
+  background-color: #E1D2C2;
+  border-color: #E1D2C2;
+}
+
+.dispo {
+  position: relative;
+}
+.dispo .row {
+  background-color: #D9C7B3;
+  width: 50%;
+  border-radius: 16px;
+  margin: auto;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  z-index: 3;
+}
+.dispo .row .form {
+  font-family: "KarlaR";
+  display: flex;
+}
+.dispo .row .form .hotel {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 1rem;
+}
+.dispo .row .form .personnes {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1rem;
+}
+.dispo .row .form .date {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 1rem;
+}
+.dispo .row .btn-primary {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dispo .row .btn-primary .submit {
+  background-color: #363A2B;
+  font-family: "KarlaR";
+  font-size: 1.875rem;
+  border: #363A2B;
+  color: white;
+  font-weight: 50;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.notation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hotelFeu {
+  background-color: #E1D2C2;
+  font-family: "KarlaR";
+}
+.hotelFeu .containerMargin1sideLeft {
+  padding-top: 15rem;
+}
+.hotelFeu .containerMargin1sideLeft .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hotelFeu .containerMargin1sideLeft .row .description {
+  padding-right: 10rem;
+}
+.hotelFeu .containerMargin1sideLeft .row .description article {
+  margin-bottom: 3rem;
+}
+
+.hotelAir {
+  background-color: #E1D2C2;
+  font-family: "KarlaR";
+}
+.hotelAir .containerMargin1sideRight {
+  padding-top: 15rem;
+}
+.hotelAir .containerMargin1sideRight .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hotelAir .containerMargin1sideRight .row .description {
+  padding-right: 10rem;
+}
+.hotelAir .containerMargin1sideRight .row .description article {
+  margin-bottom: 3rem;
+}
+
+.hotelTerre {
+  background-color: #E1D2C2;
+  font-family: "KarlaR";
+}
+.hotelTerre .containerMargin1sideLeft {
+  padding-top: 15rem;
+}
+.hotelTerre .containerMargin1sideLeft .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hotelTerre .containerMargin1sideLeft .row .description {
+  padding-right: 10rem;
+}
+.hotelTerre .containerMargin1sideLeft .row .description article {
+  margin-bottom: 3rem;
+}
+
+.hotelEau {
+  background-color: #E1D2C2;
+  font-family: "KarlaR";
+}
+.hotelEau .containerMargin1sideRight {
+  padding-top: 15rem;
+}
+.hotelEau .containerMargin1sideRight .row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.hotelEau .containerMargin1sideRight .row .description {
+  padding-right: 10rem;
+}
+.hotelEau .containerMargin1sideRight .row .description article {
+  margin-bottom: 3rem;
+}
 
 /*# sourceMappingURL=style.css.map */

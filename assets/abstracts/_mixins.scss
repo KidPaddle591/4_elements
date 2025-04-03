@@ -1,0 +1,57 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+
+@mixin mixin-remove-link-style-header{
+    text-decoration: none;
+    color: $secondary-color-link;
+}
+
+@mixin mixin-remove-link-style{
+    a{
+        text-decoration: none;
+        color: $primary-color-link;
+    }
+}
+
+@mixin hotel-right($selector){
+    #{$selector}{
+        background-color: $background-color-dispo-secondary;
+        font-family: $font-family-secondary;
+        .containerMargin1sideLeft{
+            padding-top: 15rem;
+            .row{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                .description{
+                    padding-right: 10rem;
+                    article{
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin hotel-left($selector){
+    #{$selector}{
+        background-color: $background-color-dispo-secondary;
+        font-family: $font-family-secondary;
+        .containerMargin1sideRight{
+            padding-top: 15rem;
+            .row{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                .description{
+                    padding-right: 10rem;
+                    article{
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

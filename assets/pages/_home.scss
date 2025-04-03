@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/typography" as *;
+@use"../abstracts/colors.scss" as *;
+
+//General
+h4{
+    font-family: $font-family-primary-bold ;
+    font-size: 2rem;
+}
+
+
+h2{
+    font-family:$font-family-primary ;
+    font-size: 6rem;
+}
+//Section banner
+.banner{
+    position :relative;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(0,0,0,0.5), transparent, rgba(0,0,0,0.5));
+        width: 100%;
+        height: 100%;
+    }
+    .video{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 1;
+    }
+
+    .row{
+        position: absolute;
+        top:40%;
+        right:0%;
+        z-index: 3;
+        h1{
+            font-family: PFDM;
+            font-size: 6.25rem;
+            color: #D9C7B3;
+            text-align: end;
+            margin-right:3rem;
+        }
+    }
+}
+
+//Section dispo
+input,
+textarea,
+select{
+    background-color:$background-color-dispo-secondary;
+    border-color:$background-color-dispo-secondary ;
+}
+
+.dispo{
+    position:relative;
+    .row{
+        background-color: $background-color-dispo-primary;
+        width:50%;
+        border-radius: 16px;
+        margin: auto;
+        padding: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-40%);
+        z-index: 3;
+        
+        .form{
+            font-family: $font-family-secondary;
+            display: flex;
+            .hotel{
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+                padding: 1rem;
+            }
+            .personnes{
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                padding: 1rem;
+            }
+            .date{
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+                padding: 1rem;
+            }
+        }
+        .btn-primary{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            .submit {
+                background-color: #363A2B;
+                font-family:$font-family-secondary ;
+                font-size: 1.875rem;
+                border: #363A2B;
+                color: $primary-color-txt;
+                font-weight: 50;
+            }
+        }
+    }
+}
+//Hotels
+.localisation{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.notation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@include hotel-right(".hotelFeu");
+@include hotel-left(".hotelAir");
+@include hotel-right(".hotelTerre");
+@include hotel-left(".hotelEau");
