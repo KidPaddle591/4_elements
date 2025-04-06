@@ -131,5 +131,9 @@ eauNext.addEventListener("click", function(e){
     }else {};
 })
 
+// MODAL
+//function displayModal(){
+    //document.getElementById("modalIndex").classList.remove("hidden")
+//}
 
 

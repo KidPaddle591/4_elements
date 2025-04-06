@@ -18,6 +18,19 @@
     }
 }
 
+.btnV-secondary{
+    background-color: #4F6234;
+    border-radius: 6px;
+    height: 40px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: $primary-color-link;
+    font-size: 1.25rem;
+    border:none;
+} 
+
 
 .btn-primary{
     background-color: #363A2B;
