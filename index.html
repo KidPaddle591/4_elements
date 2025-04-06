@@ -468,6 +468,114 @@
 					</div>
 				</div>
 			</section>
+			<!-- MODAL -->
+
+			<div class="modalForm">
+				<form class="form-reservation" action="#" method="post">
+					<!-- 1. Informations personnelles -->
+					<fieldset class="infoPerso">
+						<legend>Informations personnelles</legend>
+						<div class="identite">
+							<label for="nom">Nom</label>
+							<input type="text" id="nom" name="nom" required>
+						
+							<label for="prenom">Prénom</label>
+							<input type="text" id="prenom" name="prenom" required>
+						
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						
+							<label for="telephone">Téléphone</label>
+							<input type="tel" id="telephone" name="telephone" required>
+						</div>
+						<div class="adress">
+							<label for="adresse">Adresse</label>
+							<input type="text" id="adresse" name="adresse">
+						
+							<label for="code-postal">Code postal</label>
+							<input type="text" id="code-postal" name="code-postal">
+						
+							<label for="ville">Ville</label>
+							<input type="text" id="ville" name="ville">
+						</div>
+					</fieldset>
+				  
+					<!-- 2. Détails de la réservation -->
+					<fieldset class="detailsResa">
+						<legend>Détails de la réservation</legend>
+						<div class="logement">
+							<label for="section-hotel">Section de l’hôtel</label>
+							<select id="section-hotel" name="section-hotel" required>
+								<option value="">-- Choisir --</option>
+								<option value="terre">Hôtel Terre</option>
+								<option value="eau">Hôtel Eau</option>
+								<option value="air">Hôtel Air</option>
+							</select>
+							<label for="logement">Type de logement</label>
+							<select id="logement" name="logement" required>
+								<option value="">-- Choisir --</option>
+								<option value="igloo">Igloo</option>
+								<option value="suite-laponie">Suite Laponie</option>
+							</select>
+						</div>
+						<div class="detailsLogement">
+							<label for="nb-personnes">Nombre de personnes</label>
+							<select id="nb-personnes" name="nb-personnes">
+								<option value="1">1 personne</option>
+								<option value="2">2 personnes</option>
+								<option value="3">3 personnes</option>
+								<option value="4">4 personnes</option>
+							</select>
+							<label for="date-arrivee">Date d’arrivée</label>
+							<input type="date" id="date-arrivee" name="date-arrivee" required>
+							<label for="date-depart">Date de départ</label>
+							<input type="date" id="date-depart" name="date-depart" required>
+						</div>
+					</fieldset>
+				  
+					<!-- 3. Options -->
+					<fieldset class="Options">
+						<legend>Options</legend>
+						
+						<label>
+							<input type="checkbox" name="petit-dejeuner">
+							Petit déjeuner (+15€/jour/personne)
+						</label>
+						<label>
+							<input type="checkbox" name="repas">
+							Repas (+25€/jour/personne)
+						</label>
+						<label>
+							<input type="checkbox" name="chauffeur">
+							Chauffeur (+11€/jour)
+						</label>
+						<label>
+							<input type="checkbox" name="visite-guidee">
+							Visite guidée (+20€)
+						</label>
+						<label>Régime alimentaire particulier ?</label>
+						<label>
+							<input type="radio" name="regime" value="oui"> Oui
+						</label>
+						<label>
+							<input type="radio" name="regime" value="non" checked> Non
+						</label>
+						<label for="restrictions">Restrictions alimentaires</label>
+						<label>
+							<input type="checkbox" name="visite-guidee">
+							Sans gluten
+						</label>
+						<label>
+							<input type="checkbox" name="visite-guidee">
+							Sans lactose
+						</label>
+					</fieldset>
+					<!-- Bouton de soumission -->
+					<div class="submit-container">
+						<button type="submit">Réserver</button>
+					</div>
+				</form>
+			</div>
 		</main>
 		<!--Footer------------------------------------->
 		<footer>

@@ -182,6 +182,78 @@ footer .row .column:nth-child(3) a {
   color: white;
 }
 
+.hidden {
+  display: none;
+}
+
+main {
+  position: relative;
+}
+main input,
+main textarea,
+main select {
+  background-color: rgb(175, 211, 127);
+  border-color: #E1D2C2;
+  color: #656366;
+  font-size: 1rem;
+  height: 15px;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 10rem;
+}
+main .modalForm {
+  width: 70vw;
+  border-radius: 20px;
+  position: absolute;
+  background-color: beige;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  font-family: "KarlaR";
+}
+main .modalForm fieldset {
+  margin: 2rem;
+  padding: 1rem;
+}
+main .modalForm fieldset label {
+  margin-bottom: 1rem;
+}
+main .modalForm .infoPerso .idendite {
+  display: flex;
+}
+main .modalForm .infoPerso .adress {
+  margin-top: 2rem;
+}
+main .modalForm .detailsResa .logement {
+  display: flex;
+  margin-bottom: 1rem;
+}
+main .modalForm .detailsResa .detailsLogement {
+  display: flex;
+  flex-direction: column;
+}
+main .modalForm .Options {
+  display: flex;
+  flex-direction: column;
+}
+main .modalForm .submit-container {
+  display: flex;
+  justify-content: center;
+}
+main .modalForm .submit-container button {
+  background-color: #E1D2C2;
+  border-color: #E1D2C2;
+  color: #656366;
+  font-size: 1.125rem;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .d-block {
   display: block;
 }
