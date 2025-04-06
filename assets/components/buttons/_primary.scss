@@ -2,29 +2,33 @@
 @use "../../abstracts/typography" as *;
 @use "../../abstracts/mixins" as *;
 
-.header-footer-btn-primary{
-    background-color: #363A2B;
+.btn-secondary{
+    background-color: #4F6234;
     border-radius: 6px;
-    height: 50%;
+    height: 40px;
+    width: 190px;
+    display: flex;
+    align-items: center;
     a{
+        text-decoration: none;
         padding: 1rem;
-        color: $primary-color-txt;
+        color: $primary-color-link;
+        font-size: 1.25rem;
+
     }
 }
 
-.header-footer-btn-secondary{
-    a{
-        color:$secondary-color-link;
-    }
-}
 
 .btn-primary{
     background-color: #363A2B;
     border-radius: 6px;
-    //height: 50%;
-    width: 60%;
+    height: 20x;
+    width: 200px;
     padding: 1rem;
-    font-family: $font-family-secondary;
-    font-size:1.875rem;
-    @include mixin-remove-link-style;
+    a{ 
+        font-family: $font-family-secondary;
+        font-size:1.875rem;
+        text-decoration: none;
+        color: $primary-color-link;
+    }
 }

@@ -11,7 +11,8 @@
     display: none;
 }
 
-.hotelFeu{
+.hotelFeu,
+.hotelTerre{
     .carouselR{
         display: flex;
         .carousel-images{
@@ -26,7 +27,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: auto;
-                height: auto;
+                height: 100%;
             }
         }
         .carousel-right {
@@ -40,13 +41,14 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: auto;
-                height: auto;
+                height: 100%
             }
         }
     }
 }
 
-.hotelAir{
+.hotelAir,
+.hotelEau{
     .carouselL{
         display: flex;
         .carousel-button {
@@ -60,7 +62,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: auto;
-                height: auto;
+                height: 100%;
             }
         }
         .carousel-images{
@@ -75,9 +77,8 @@
                 left: 50%;
                 transform: translateX(-50%);
                 width: auto;
-                height: auto;
+                height: 100%;
             }
         }
-        
     }
 }

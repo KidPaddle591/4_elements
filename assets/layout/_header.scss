@@ -6,7 +6,8 @@
 header{
     font-family: $font-family-secondary;
     font-size: 1.25rem;
-    ;
+    position: fixed;
+    z-index: 4;
     .container-fluid{
         width: 100%;
         background-color: #E5E0DC;
@@ -47,13 +48,20 @@ header{
                    }
                 }
             }
-            .column:nth-child(4){
+            .column:nth-child(4){ //Reserver/se connecter
                 display: flex;
+                align-items: center;
                 margin-left: 5rem;
-                margin-right: 4rem; ;
+                margin-right: 9rem;
                 gap: 1rem;
-                a{
-                    text-decoration: none;
+                .btn-secondary{
+                    width: 115px;
+                }
+                .seConnecter{
+                    a{
+                        text-decoration: none;
+                        color:$secondary-color-link;
+                    }
                 }
             }
         }    

@@ -36,10 +36,7 @@
 @use "components/pagination";
 //  Import des pages spécifiques
 @use "pages/home";
-@use "pages/about";
-@use "pages/contact";
-@use "pages/blog";
-@use "pages/page-404";
+@use "pages/hotel_feu";
 //  Import des utilitaires
 @use "utils/animations";
 @use "utils/spacing";

@@ -31,6 +31,8 @@
 header {
   font-family: "KarlaR";
   font-size: 1.25rem;
+  position: fixed;
+  z-index: 4;
 }
 header .container-fluid {
   width: 100%;
@@ -74,37 +76,108 @@ header .container-fluid .row .column:nth-child(3) a img {
 }
 header .container-fluid .row .column:nth-child(4) {
   display: flex;
+  align-items: center;
   margin-left: 5rem;
-  margin-right: 4rem;
+  margin-right: 9rem;
   gap: 1rem;
 }
-header .container-fluid .row .column:nth-child(4) a {
+header .container-fluid .row .column:nth-child(4) .btn-secondary {
+  width: 115px;
+}
+header .container-fluid .row .column:nth-child(4) .seConnecter a {
   text-decoration: none;
+  color: #363A2B;
 }
 
-.header-footer-btn-primary {
-  background-color: #363A2B;
-  border-radius: 6px;
-  height: 50%;
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 1rem 0;
 }
-.header-footer-btn-primary a {
+
+.bold {
+  font-family: "KarlaB";
+}
+
+footer {
+  padding: 4rem 2rem;
+  font-family: "KarlaR";
+  color: black;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+footer .row .column {
+  min-width: 250px;
+}
+footer .row img {
+  max-width: 200px;
+  height: auto;
+}
+footer .row a {
+  text-decoration: none;
+  color: white img;
+  color-width: 24px;
+  color-height: 24px;
+}
+footer .row ul {
+  list-style: none;
+}
+footer .row ul li {
+  margin-bottom: 2rem;
+}
+footer .row .column:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+footer .row .column:nth-child(1) .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+footer .row .column:nth-child(2) {
+  text-align: start;
+  margin-right: 2rem;
+}
+footer .row .column:nth-child(3) {
+  text-align: start;
+  font-family: "KarlaB";
+}
+footer .row .column:nth-child(3) a {
+  color: #363A2B;
+}
+
+.btn-secondary {
+  background-color: #4F6234;
+  border-radius: 6px;
+  height: 40px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+}
+.btn-secondary a {
+  text-decoration: none;
   padding: 1rem;
   color: white;
-}
-
-.header-footer-btn-secondary a {
-  color: #363A2B;
+  font-size: 1.25rem;
 }
 
 .btn-primary {
   background-color: #363A2B;
   border-radius: 6px;
-  width: 60%;
+  height: 20x;
+  width: 200px;
   padding: 1rem;
-  font-family: "KarlaR";
-  font-size: 1.875rem;
 }
 .btn-primary a {
+  font-family: "KarlaR";
+  font-size: 1.875rem;
   text-decoration: none;
   color: white;
 }
@@ -117,70 +190,94 @@ header .container-fluid .row .column:nth-child(4) a {
   display: none;
 }
 
-.hotelFeu .carouselR {
+.hotelFeu .carouselR,
+.hotelTerre .carouselR {
   display: flex;
 }
-.hotelFeu .carouselR .carousel-images {
+.hotelFeu .carouselR .carousel-images,
+.hotelTerre .carouselR .carousel-images {
   margin-right: 2rem;
   position: relative;
   width: 488px;
   height: 621px;
   overflow: hidden;
 }
-.hotelFeu .carouselR .carousel-images .img-item {
+.hotelFeu .carouselR .carousel-images .img-item,
+.hotelTerre .carouselR .carousel-images .img-item {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  height: auto;
+  height: 100%;
 }
-.hotelFeu .carouselR .carousel-right {
+.hotelFeu .carouselR .carousel-right,
+.hotelTerre .carouselR .carousel-right {
   position: relative;
   width: 244px;
   height: 621px;
   overflow: hidden;
 }
-.hotelFeu .carouselR .carousel-right .img-item {
+.hotelFeu .carouselR .carousel-right .img-item,
+.hotelTerre .carouselR .carousel-right .img-item {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
-.hotelAir .carouselL {
+.hotelAir .carouselL,
+.hotelEau .carouselL {
   display: flex;
 }
-.hotelAir .carouselL .carousel-button {
+.hotelAir .carouselL .carousel-button,
+.hotelEau .carouselL .carousel-button {
   position: relative;
   width: 244px;
   height: 621px;
   overflow: hidden;
 }
-.hotelAir .carouselL .carousel-button .img-item {
+.hotelAir .carouselL .carousel-button .img-item,
+.hotelEau .carouselL .carousel-button .img-item {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  height: auto;
+  height: 100%;
 }
-.hotelAir .carouselL .carousel-images {
+.hotelAir .carouselL .carousel-images,
+.hotelEau .carouselL .carousel-images {
   margin-left: 2rem;
   position: relative;
   width: 488px;
   height: 621px;
   overflow: hidden;
 }
-.hotelAir .carouselL .carousel-images .img-item {
+.hotelAir .carouselL .carousel-images .img-item,
+.hotelEau .carouselL .carousel-images .img-item {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  height: auto;
+  height: 100%;
+}
+
+main {
+  background-color: #E1D2C2;
+}
+
+h2 {
+  font-family: "PFDM";
+  font-size: 6rem;
+}
+
+h3 {
+  font-family: "PFDB";
+  font-size: 3rem;
 }
 
 h4 {
@@ -188,9 +285,29 @@ h4 {
   font-size: 2rem;
 }
 
-h2 {
-  font-family: "PFDM";
-  font-size: 6rem;
+h5 {
+  font-family: "PFDB";
+  font-size: 1.25rem;
+}
+
+.container-margin-both-sides {
+  width: 90%;
+  margin: auto;
+}
+
+.containerMargin1sideRight {
+  width: 90%;
+  margin-right: auto;
+}
+
+.containerMargin1sideLeft {
+  width: 90%;
+  margin-left: auto;
+}
+
+p {
+  color: #363A2B;
+  font-size: 1.125rem;
 }
 
 .banner {
@@ -236,6 +353,16 @@ textarea,
 select {
   background-color: #E1D2C2;
   border-color: #E1D2C2;
+  color: #656366;
+  font-size: 1.125rem;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+label {
+  margin: 0.5rem 0 0.5 0rem;
 }
 
 .dispo {
@@ -251,6 +378,10 @@ select {
   left: 50%;
   transform: translateX(-50%) translateY(-40%);
   z-index: 3;
+  height: 200px;
+}
+.dispo .row h4 {
+  padding: 1rem;
 }
 .dispo .row .form {
   font-family: "KarlaR";
@@ -278,6 +409,8 @@ select {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
 }
 .dispo .row .btn-primary .submit {
   background-color: #363A2B;
@@ -301,7 +434,6 @@ select {
 }
 
 .hotelFeu {
-  background-color: #E1D2C2;
   font-family: "KarlaR";
 }
 .hotelFeu .containerMargin1sideLeft {
@@ -313,14 +445,13 @@ select {
   align-items: flex-start;
 }
 .hotelFeu .containerMargin1sideLeft .row .description {
-  padding-right: 10rem;
+  padding-right: 9rem;
 }
 .hotelFeu .containerMargin1sideLeft .row .description article {
   margin-bottom: 3rem;
 }
 
 .hotelAir {
-  background-color: #E1D2C2;
   font-family: "KarlaR";
 }
 .hotelAir .containerMargin1sideRight {
@@ -328,18 +459,17 @@ select {
 }
 .hotelAir .containerMargin1sideRight .row {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .hotelAir .containerMargin1sideRight .row .description {
-  padding-right: 10rem;
+  padding-left: 9rem;
 }
 .hotelAir .containerMargin1sideRight .row .description article {
   margin-bottom: 3rem;
 }
 
 .hotelTerre {
-  background-color: #E1D2C2;
   font-family: "KarlaR";
 }
 .hotelTerre .containerMargin1sideLeft {
@@ -351,14 +481,13 @@ select {
   align-items: flex-start;
 }
 .hotelTerre .containerMargin1sideLeft .row .description {
-  padding-right: 10rem;
+  padding-right: 9rem;
 }
 .hotelTerre .containerMargin1sideLeft .row .description article {
   margin-bottom: 3rem;
 }
 
 .hotelEau {
-  background-color: #E1D2C2;
   font-family: "KarlaR";
 }
 .hotelEau .containerMargin1sideRight {
@@ -366,14 +495,434 @@ select {
 }
 .hotelEau .containerMargin1sideRight .row {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .hotelEau .containerMargin1sideRight .row .description {
-  padding-right: 10rem;
+  padding-left: 9rem;
 }
 .hotelEau .containerMargin1sideRight .row .description article {
   margin-bottom: 3rem;
+}
+
+.description {
+  font-family: "KarlaR";
+  font-size: 1.25rem;
+}
+.description .row {
+  display: flex;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.description .row .column {
+  padding: 0 2rem 0 2rem;
+}
+.description .row .column .descriptionTitre {
+  padding-bottom: 2rem;
+}
+.description .row .column .descriptionImage img {
+  width: 488px;
+  height: 334px;
+  object-fit: cover;
+}
+.description .row .column:nth-child(1) div:nth-child(3) {
+  padding-top: 2rem;
+}
+.description .row .column:nth-child(2) div:nth-child(2) {
+  padding-bottom: 2rem;
+}
+
+.createur {
+  font-family: "KarlaR";
+  font-size: 1.25rem;
+}
+.createur .row {
+  display: flex;
+}
+.createur .row .column:nth-child(1) {
+  padding-right: 7rem;
+}
+.createur .row .column:nth-child(1) div:nth-child(1) {
+  padding-bottom: 4rem;
+}
+.createur .row .column:nth-child(1) div:nth-child(1) {
+  padding-bottom: 4rem;
+}
+.createur .row .column:nth-child(1) div:nth-child(4) {
+  padding: 2rem 0 2rem 0;
+}
+.createur .row .column:nth-child(1) div:nth-child(4) p:nth-child(1) {
+  font-family: "KarlaB";
+}
+.createur .row .column:nth-child(2) img {
+  width: 488px;
+  height: 712px;
+  object-fit: cover;
+}
+
+h6 {
+  font-family: "PFDB";
+  font-size: 1.875rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.offres {
+  padding: 4rem 2rem;
+  font-family: "KarlaR";
+  color: black;
+}
+.offres .container-margin-both-sides {
+  max-width: 1200px;
+}
+.offres .container-margin-both-sides .row {
+  display: flex;
+  gap: 9rem;
+  margin-top: 5rem;
+}
+.offres .container-margin-both-sides .row .igloos .imgOffres {
+  width: 492px;
+  height: 432px;
+  object-fit: cover;
+}
+.offres .container-margin-both-sides .row .igloos article {
+  font-family: "KarlaR";
+  margin-bottom: 2rem;
+}
+.offres .container-margin-both-sides .row .igloos .pictoInfo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.offres .container-margin-both-sides .row .igloos .pictoInfo div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 45%;
+}
+.offres .container-margin-both-sides .row .igloos .pictoInfo div img {
+  width: 29px;
+  height: 20px;
+  object-fit: contain;
+}
+.offres .container-margin-both-sides .row .igloos .pictoInfo div p {
+  font-family: "KarlaR";
+  font-size: 0.9375;
+}
+.offres .container-margin-both-sides .row .igloos .details {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.offres .container-margin-both-sides .row .igloos a {
+  text-decoration: none;
+  color: #4F6234;
+  padding-bottom: 1rem;
+}
+.offres .container-margin-both-sides .row .igloos p span {
+  font-size: 1.5rem;
+}
+.offres .container-margin-both-sides .row .igloos .cta {
+  background-color: #363A2B;
+  border-radius: 6px;
+  height: 20x;
+  width: 200px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.offres .container-margin-both-sides .row .igloos .cta a {
+  font-family: "KarlaR";
+  font-size: 1.875rem;
+  text-decoration: none;
+  color: white;
+}
+.offres .container-margin-both-sides .row .laponie .imgOffres {
+  width: 492px;
+  height: 432px;
+  object-fit: cover;
+}
+.offres .container-margin-both-sides .row .laponie article {
+  font-family: "KarlaR";
+  margin-bottom: 2rem;
+}
+.offres .container-margin-both-sides .row .laponie .pictoInfo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.offres .container-margin-both-sides .row .laponie .pictoInfo div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 45%;
+}
+.offres .container-margin-both-sides .row .laponie .pictoInfo div img {
+  width: 29px;
+  height: 20px;
+  object-fit: contain;
+}
+.offres .container-margin-both-sides .row .laponie .pictoInfo div p {
+  font-family: "KarlaR";
+  font-size: 0.9375;
+}
+.offres .container-margin-both-sides .row .laponie .details {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.offres .container-margin-both-sides .row .laponie a {
+  text-decoration: none;
+  color: #4F6234;
+  padding-bottom: 1rem;
+}
+.offres .container-margin-both-sides .row .laponie p span {
+  font-size: 1.5rem;
+}
+.offres .container-margin-both-sides .row .laponie .cta {
+  background-color: #363A2B;
+  border-radius: 6px;
+  height: 20x;
+  width: 200px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.offres .container-margin-both-sides .row .laponie .cta a {
+  font-family: "KarlaR";
+  font-size: 1.875rem;
+  text-decoration: none;
+  color: white;
+}
+
+.ServicesSupplementaires {
+  padding: 4rem 2rem;
+}
+.ServicesSupplementaires p {
+  font-family: "KarlaR";
+  color: white;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.ServicesSupplementaires .containerMargin1sideLeft {
+  max-width: 1200px;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity {
+  position: relative;
+  overflow: hidden;
+  width: 488px;
+  height: 350px;
+  color: white;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity img {
+  object-fit: cover;
+  object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity div {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 1.5rem;
+}
+.ServicesSupplementaires .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity div p:nth-child(3) {
+  font-family: "KarlaB";
+}
+
+.activity {
+  padding: 4rem 2rem;
+}
+.activity p {
+  font-family: "KarlaR";
+  color: white;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.activity .containerMargin1sideLeft {
+  max-width: 1200px;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity {
+  position: relative;
+  overflow: hidden;
+  width: 488px;
+  height: 350px;
+  color: white;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity img {
+  object-fit: cover;
+  object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity div {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 1.5rem;
+}
+.activity .containerMargin1sideLeft .row:nth-child(2) .cardServiceActivity div p:nth-child(3) {
+  font-family: "KarlaB";
+}
+
+.video .container-fluid {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+.video .container-fluid .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 100%;
+}
+.video .container-fluid .video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center calc(100% + 30px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.avis .container-margin-both-sides {
+  font-family: "KarlaR";
+}
+.avis .container-margin-both-sides .row:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.avis .container-margin-both-sides .row:nth-child(2) .profil {
+  font-family: "KarlaB";
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.avis .container-margin-both-sides .row:nth-child(2) .profil .PFP {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avis .container-margin-both-sides .row:nth-child(2) .profil .PFP img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.avis .container-margin-both-sides .row:nth-child(2) .profil .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.avis .container-margin-both-sides .row:nth-child(2) .profil .info .rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.generalInfo h3 {
+  margin: 4rem 0 4rem 0;
+}
+.generalInfo .rowG {
+  font-family: "KarlaR";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.generalInfo .rowG .column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.generalInfo .rowG .column .row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.generalInfo .rowG .column .row img {
+  width: 24px;
+  height: 24px;
+  margin-top: 0.3rem;
+}
+.generalInfo .rowG .column .row div p {
+  margin: 0.2rem 0;
+}
+.generalInfo .rowG .column .row div p:first-child {
+  font-weight: 700;
+}
+.generalInfo .rowG .column .row:first-child {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.generalInfo .rowG .column .row:first-child div:nth-child(2),
+.generalInfo .rowG .column .row:first-child div:nth-child(3) {
+  min-width: 120px;
+}
+.generalInfo .contact {
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+  font-family: "KarlaR";
+}
+.generalInfo .contact h5 {
+  margin-bottom: 2rem;
+}
+.generalInfo .contact p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
 }
 
 /*# sourceMappingURL=style.css.map */
