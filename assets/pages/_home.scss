@@ -24,8 +24,11 @@ h5{
     font-size: 1.25rem;
 }
 
+.container-fluid{
+    width: 100%;
+}
 .container-margin-both-sides{
-    width:90%;
+    width:75%;
     margin: auto;
 }
 
@@ -86,9 +89,15 @@ p{
 }
 
 //Section dispo
-input,
-textarea,
-select{
+
+label{
+    margin: 0.5rem 0 0.5 0rem;
+}
+
+.dispo{
+    input,
+    textarea,
+    select{
     background-color:$background-color-dispo-secondary;
     border-color:$background-color-dispo-secondary ;
     color: #656366;
@@ -98,12 +107,6 @@ select{
     border-radius: 4px;
     padding: 0.5rem;
 }
-
-label{
-    margin: 0.5rem 0 0.5 0rem;
-}
-
-.dispo{
     position:relative;
     .row{
         background-color: $background-color-dispo-primary;
@@ -184,6 +187,7 @@ label{
         display: flex;
         padding-top: 7rem;
         padding-bottom: 7rem;
+        justify-content: center;
         .column{
             padding: 0 2rem 0 2rem;
             .descriptionTitre{
@@ -216,6 +220,7 @@ label{
     font-size: 1.25rem;
     .row{
         display: flex;
+        justify-content: center;
         .column:nth-child(1){
             padding-right: 7rem;
             div:nth-child(1){

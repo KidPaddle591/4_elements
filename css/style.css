@@ -375,8 +375,12 @@ h5 {
   font-size: 1.25rem;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .container-margin-both-sides {
-  width: 90%;
+  width: 75%;
   margin: auto;
 }
 
@@ -433,9 +437,16 @@ p {
   margin-right: 3rem;
 }
 
-input,
-textarea,
-select {
+label {
+  margin: 0.5rem 0 0.5 0rem;
+}
+
+.dispo {
+  position: relative;
+}
+.dispo input,
+.dispo textarea,
+.dispo select {
   background-color: #E1D2C2;
   border-color: #E1D2C2;
   color: #656366;
@@ -444,14 +455,6 @@ select {
   border: none;
   border-radius: 4px;
   padding: 0.5rem;
-}
-
-label {
-  margin: 0.5rem 0 0.5 0rem;
-}
-
-.dispo {
-  position: relative;
 }
 .dispo .row {
   background-color: #D9C7B3;
@@ -598,6 +601,7 @@ label {
   display: flex;
   padding-top: 7rem;
   padding-bottom: 7rem;
+  justify-content: center;
 }
 .description .row .column {
   padding: 0 2rem 0 2rem;
@@ -623,6 +627,7 @@ label {
 }
 .createur .row {
   display: flex;
+  justify-content: center;
 }
 .createur .row .column:nth-child(1) {
   padding-right: 7rem;
